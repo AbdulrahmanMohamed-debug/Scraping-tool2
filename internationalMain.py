@@ -12,11 +12,11 @@ import time
 # set up the webdriver
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
-class KangarooJobs():
+class Jobs():
 
     def file_name(self):
         x = date.today()
-        return ("Tesla_jobs " + str(x) + ".csv")
+        return ("__Title removed___jobs " + str(x) + ".csv")
       
           
 
@@ -136,7 +136,7 @@ class KangarooJobs():
         
         driver.implicitly_wait(2)
         
-        main_link = "https://www.tesla.com/careers/search/"
+        main_link = "https://www.__Title removed__.com/careers/search/"
         country = ["HR", "GR", "TW", "DE", "US", "MX", "CN"]
         # Germany, US, Mexico, China Mainland, Taiwan
         
@@ -169,7 +169,7 @@ class KangarooJobs():
     
     
 if __name__=="__main__": 
-    KangarooJobs().main()
+    Jobs().main()
         
 
          
